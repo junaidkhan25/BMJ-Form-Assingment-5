@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>Forms</title>
+</head>
+
+<body>
+    <center> <br>
+        <table border="2">
+            <tr>
+                <th bgcolor="Aquamarine">Step 1: Account</th>
+                <th bgcolor="Aquamarine">Step 2: Personal Details</th>
+                <th bgcolor="DarkGray">Step 3: Your Reviews</th>
+            </tr>
+        </table>
+    </center> <br>
+
+    <form action="http://www.example.com/review.php" method="get">
+        <fieldset>
+          <legend>
+                Your Review:
+            </legend>
+            <p>
+                <label for="hear-about">
+                    How did you hear about us?
+                </label>
+                <select name="referrer" id="hear-about">
+                    <option value="google">Google</option>
+                    <option value="friend">Friend</option>
+                    <option value="advert">Advert</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+            <p>
+                Would you visit again?
+                <br />
+                <label>
+                    <input type="radio" name="rating" value="yes" />
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="no" />
+                    No
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="maybe" />
+                    Maybe
+                </label>
+            </p>
+            <p>
+                <label for="comments">
+                    Comments:
+                </label>
+                <br />
+                <textarea rows="4" cols="40" id="comments" placeholder="enter your comment">
+</textarea>
+            </p>
+            <label>Documents: <br>
+                <input type="file" name="Documents"></label> <br>
+            <label>
+                <input type="checkbox" name="subscribe" checked="checked" />
+                Sign me up for email updates
+            </label>
+            <br />
+            <a href="./login.html">
+                <img src="./Images/back.png " width="80" height="50">
+            </a>
+            <a href="">
+            <img src="./Images/submit.png" width="80" height="50">
+        </a>
+        </fieldset>
+    </form>
+</body>
+
+</html>
